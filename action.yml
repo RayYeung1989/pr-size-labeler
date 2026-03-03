@@ -1,5 +1,7 @@
 name: 'PR Size Labeler'
 
+description: 'Automatically label pull requests by their size (XS/S/M/L/XL)'
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]
@@ -36,3 +38,7 @@ jobs:
               issue_number: context.issue.number,
               labels: [`size/${size}`]
             });
+
+branding:
+  icon: 'git-pull-request'
+  color: 'green'
