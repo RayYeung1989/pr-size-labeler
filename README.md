@@ -17,13 +17,25 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-      - uses: your-username/pr-size-labeler@v1
+      - uses: RayYeung1989/pr-size-labeler@v1.0.0
 ```
 
 ## Size Labels
 
-- `size/XS` - Less than 10 lines changed
-- `size/S` - 10-49 lines changed
-- `size/M` - 50-199 lines changed
-- `size/L` - 200-499 lines changed
-- `size/XL` - 500+ lines changed
+| Label | Lines Changed |
+|-------|---------------|
+| `size/XS` | < 10 lines |
+| `size/S` | 10-49 lines |
+| `size/M` | 50-199 lines |
+| `size/L` | 200-499 lines |
+| `size/XL` | 500+ lines |
+
+## Why Use It?
+
+- Keep your PRs small and reviewable
+- Identify large PRs that need extra attention
+- Automate labeling workflow
+
+## License
+
+MIT
